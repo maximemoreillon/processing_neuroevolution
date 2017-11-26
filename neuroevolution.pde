@@ -80,9 +80,11 @@ void draw() {
   // Apply natural selection
   my_population.natural_selection();
   println("Generation: " + my_population.generation + " mean fitness: " + my_population.mean_fitness + " max fitness: " + my_population.max_fitness + ", min fitness: " + my_population.min_fitness + ", death_toll: " + my_population.death_toll);
-
+  
+  // Display info
   fill(255);
-  textSize(24);
+  textSize(18);
   textAlign(LEFT,UP);
   text("Generation: " + my_population.generation,25,50);
+  text("Min cost: " + -my_population.max_fitness,200,50);
 }

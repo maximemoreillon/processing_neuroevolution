@@ -8,7 +8,7 @@ class Chromosome{
   // Properties related to evolution
   boolean alive;
   float fitness;
-  float mutation_factor = 0.1;
+  float mutation_factor = 0.01;
   float initial_variance = 2;
   
   Chromosome(int[] network_structure, int network_input_count){
